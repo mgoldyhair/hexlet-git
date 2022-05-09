@@ -1,0 +1,2 @@
+make:
+	echo 'Hello, World!'
