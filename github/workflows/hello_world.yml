@@ -20,5 +20,4 @@ jobs:
           pip install poetry
           make install
       - name: say-hello
-        run: |
-          make say-hello
+        run: make say-hello
