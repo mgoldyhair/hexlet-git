@@ -2,16 +2,18 @@ name: Hello world workflow
 on:
   push:
     branches:
-      -main
+      - main
   pull_request:
     branches:
-      -main
+      - main
   workflow_dispatch
 
 jobs:
-  hello:
+  build:
     runs-on: ubuntu-latest
     steps:
-      -uses: actions/checkout@v2
+      - name: Check out repository code
+        uses: actions/checkout@v3
+
       - name: say-hello
         run: make say-hello
